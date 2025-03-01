@@ -1,3 +1,4 @@
+/* hero slider  */
 .swiper {
   width: 100%;
   height: 500px; /* Điều chỉnh chiều cao */
@@ -116,6 +117,7 @@
   }
 }
 
+/* truyen item  */
 .story img {
   width: 60px;
   height: 70px;
@@ -147,11 +149,15 @@
   color: #aaa;
   margin: 0;
 }
+
+/* The loai truyen  */
 .category-list {
-  padding: 30px;
-  background-color: #f9f9f9;
-  border-radius: 5px;
+  padding: 20px;
+  background-color: rgb(32 32 32/ 1);
+  border-radius: 1px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin-top: 61px;
 }
 
 .category-list ul {
@@ -159,7 +165,8 @@
   padding: 0;
   margin: 0;
   column-count: 2; /* Create two columns */
-  column-gap: 20px; /* Space between columns */
+  column-gap: 30px; /* Space between columns */
+  position: relative;
 }
 
 .category-list ul li {
@@ -168,11 +175,57 @@
 
 .category-list ul li a {
   text-decoration: none;
-  color: #333;
+  color: #fff;
   font-size: 16px;
   transition: color 0.3s;
 }
 
 .category-list ul li a:hover {
   color: #e53637;
+}
+
+/* Update truyen card  */
+.card {
+  background-color: rgb(32 32 32/ 1);
+  border: none;
+  height: 100px;
+}
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.top-05rem {
+  margin-top: 0.5rem !important;
+}
+.card-text {
+  font-size: 0.9rem;
+  line-height: 10px;
+}
+.time-info {
+  font-size: 0.8rem;
+  color: gray;
+}
+.img-box {
+  width: 90px; /* Giữ cố định chiều rộng */
+  height: 100%; /* Đảm bảo chiều cao cố định */
+  border-radius: 2px 0 0 2px; /* Bo góc bên trái */
+  overflow: hidden; /* Cắt phần ảnh thừa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.card-body1 {
+  flex: 1 1 auto;
+  min-height: 1px;
+
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 }
